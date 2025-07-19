@@ -749,11 +749,29 @@ main {
     min-width:39vw ;
 }
 
+.services{
+    max-width: 100vw;
+}
+.services h4 {
+    font-size: medium;
+    text-align: center;
+}
+.s1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "left right"
+    "left right"
+    "left right";
+}
 
 
 
 
-.services{}
+
+
+
 .about_me{}
 .aboutme{}
 .portfolio{}
