@@ -660,7 +660,7 @@ header ul li {
     margin: 5px 0px;
     border-bottom: 1px solid white;
     border-right: none;
-    word-spacing: 0px;
+   
 }
 header h3 {
     display: grid;
@@ -684,21 +684,87 @@ header img {
 header button{
     display: grid;
     grid-area: "button";
-    margin-right: 10px;
+    margin-right: 25px;
    justify-self: center;
-    min-width: 100px;
-    max-width: 100px;
+    min-width: 50px;
+    max-width: 90px;
     justify-content: center;
     align-content: center;
+    margin-left: 0px;
+
 }
+/*main*/
+main {
+    display:grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "home"
+    "services"
+    "aboutme"
+    "portfolio"
+    "contactme";
+
+}
+.home{
+    display: grid;
+    grid-template-rows: 2fr 1fr ;
+    grid-template-areas: 
+    "top"
+    "bottom";
+    grid-area: "home";
+    max-width: 100vw;
+    height: auto;
+    justify-content: center;
+    justify-self:center;
+}
+.part1 {
+    display: grid;
+    grid-area:"top" ;
+    background-color: #000000;
+    margin: 0px;
+    position: relative;
+    justify-self: center;
+    width: auto;
+   
+}
+
+.part2 {
+    display: grid;
+    grid-area:"bottom";
+    justify-content: center;
+    position: absolute;
+    margin-top: 520px;
+    justify-self: center;
+   min-width: 50vw;
+   min-height: 50vh;
+   background:#d5d1d14e;
+}
+.circular {
+    max-height: 41vh;
+   min-width:44vw ;
+    
+}
+.circular img {
+    max-height: 40vh;;
+    min-width:39vw ;
 }
 
 
 
 
 
+.services{}
+.about_me{}
+.aboutme{}
+.portfolio{}
+.contact_me{}
 
 
 
 
 
+
+
+
+
+}
